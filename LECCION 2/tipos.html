@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo de tipos de Datos</title>
+    </head>
+    <body>
+        <button onclick="tipos();">Ejecutar</button>
+        <script>
+            //variable con scope global (fuera de la funcion) no se recomienda porque ocupa mas memoria
+            var bebida = "Coca cola"
+
+            function demostraciontipos() {
+                //variable con scope local (está dentro de la funcion)
+                var nombre = "Marcela"; //tipo string
+                var edad = 25; //tipo number
+                var cesante = false;// tipo boolean
+                // si a cualquier valor le agrego comillas lo considerará string automaticamente
+
+                //variable objeto: es una unidad que contiene distintas propiedades que lo describen y puede contener distintos tipos (number, string y boolean)
+                var asignatura = {
+                    nombre: "matemáticas avanzadas",
+                    nivel: "Tercer semestre",
+                    profesor: "Gaston",
+                    código: 123,
+                    habilidad: true
+                };
+                // Array (arreglo, lista)
+                var trabajadores = [
+                    'Juan',
+                    'Marcela',
+                    'Oscar'
+                ];
+
+                console.log ("Nombre: " + nombre);
+                console.log ("Edad: " + edad);
+                console.log ("Cesante: " + nombre);
+
+                console.log (Asignatura);
+                console.log ("Cesante: " + nombre);
+
+
+
+                //las variables array se contabilizan desde 0, el primer elemento es 0, si mencionas un numero mayor o menor a la cantidad de elementos, dirá undefined
+
+                //para saber que tipo de variable es, se usa typeof
+                console.log ("Nombre es tipo: " + typeof nombre);
+
+            }
+        </script>
+    </body>
+</html>

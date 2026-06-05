@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo de Operadores</title>
+    </head>
+    <body>
+        <button onclick="operadores();">Ejecutar</button>
+        <script>
+            function operadores() {
+                const numero1 = 5, numero2 = 2;
+                let contador = 0
+
+                console.log("Suma: " + numero1 + numero2); 
+                // esto va a concatenar, es decir registrar el numero 1 al lado del numero 2 = 52
+
+                console.log("Suma: " + (numero1 + numero2));
+                //se deben usar los parentesis para hacer la operacion matematica
+                console.log("Resta: " + (numero1 - numero2));
+                console.log("Multiplicación: " + (numero1 * numero2));
+                console.log("División: " + (numero1 / numero2));
+               
+                console.log("Resto: " + (numero1 % numero2));
+                //el resto es lo que queda de la diviion que no es numero entero
+
+                console.log ("Contador: " + contador);
+
+                contador = contador + 1;
+                console.log ("Contador: " + contador);
+
+                // Muestra 0 e incrementa
+                console.log("Contador: " + contador++); 
+                //Muestra 1 e incrementa
+                console.log("Contador: " + contador++);
+                //Muestra 2 y decrementa
+                console.log("Contador: " + contador--);
+                //Muestra 1 y decrementa
+                console.log("Contador: " + contador--);
+                //Muestra 0
+                console.log("Contador: " + contador);
+
+                //Operadores de comparacion
+                console.log(Operadores de comparación);
+                console.log ("Igual: " + (numero1 == numero2));
+                console.log ("Distinto: " + (numero1 != numero2));
+                console.log ("Mayor: " + (numero1 > numero2));
+                console.log ("Menor: " + (numero1 < numero2));
+                console.log ("Mayor o igual: " + (numero1 >= numero2));
+                console.log ("Menor o igual: " + (numero1 <= numero2));
+
+
+
+            }
+          
+
+            
+        </script>
+    </body>
+</html>
