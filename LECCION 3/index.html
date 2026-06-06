@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejemplo de ciclo</title>
+    </head>
+    <body>
+        <button onclick="ciclo();">Ejecutar</button>
+        <script>
+            function ciclo() {
+                
+                //los ciclos se inician con for, el segundo i debe estar siempre para evitar los loops
+                for(let i=1; i <= 10000; i++){
+                    console.log(i);
+                }
+                 //para incrementar en 1 se puede poner ++, pero si necesito ir incrementando cada 2 o mas debo escribir i=+2 o la cantidad que quiera
+
+                  //para decrementar se hace al reves se parte de un numero mayor, el limite debe ser menor y se disminuye con -- o =-4 o el numero que quiera
+                   for(let i=1000; i <= 1; i--){
+                    console.log(i);
+                }
+                 
+            }
+
+        </script>
+    </body>
+</html>
